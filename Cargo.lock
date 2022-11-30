@@ -499,7 +499,7 @@ dependencies = [
  "byteorder",
  "embedded-graphics-core",
  "float-cmp",
- "micromath",
+ "micromath 1.1.1",
 ]
 
 [[package]]
@@ -836,6 +836,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bc4010833aea396656c2f91ee704d51a6f1329ec2ab56ffd00bfd56f7481ea94"
 
 [[package]]
+name = "micromath"
+version = "2.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "39617bc909d64b068dcffd0e3e31679195b5576d0c83fadc52690268cc2b2b55"
+
+[[package]]
 name = "nb"
 version = "0.1.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1043,16 +1049,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "rotary-encoder-hal"
-version = "0.5.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ca5f10fcd6842ed448d9f5913815a343cdcbe10e53da6cac948251d529b75487"
-dependencies = [
- "either",
- "embedded-hal 0.2.7",
-]
-
-[[package]]
 name = "rustc_version"
 version = "0.2.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1173,10 +1169,10 @@ dependencies = [
  "embedded-hal 0.2.7",
  "futures",
  "heapless",
+ "micromath 2.0.0",
  "nb 1.0.0",
  "panic-probe",
  "pid",
- "rotary-encoder-hal",
  "ssd1306",
  "thermocouple",
 ]
